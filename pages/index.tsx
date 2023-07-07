@@ -23,8 +23,8 @@ const Homepage = (_props: InferGetStaticPropsType<typeof getStaticProps>) => {
     i18n.changeLanguage(newLocale);
   }
 
-  const changeTo = router.locale === 'en' ? 'de' : 'pt'
-  // const changeTo = i18n.resolvedLanguage === 'en' ? 'de' : 'en'
+  const changeTo = router.locale === 'en' ? 'en' : 'pt'
+  // const changeTo = i18n.resolvedLanguage === 'en' ? 'en' : 'en'
 
   return (
     <>
