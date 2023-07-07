@@ -1,11 +1,9 @@
-import common from '../public/locales/en/common.json';
-import footer from '../public/locales/en/footer.json';
-import secondpage from '../public/locales/en/second-page.json';
+import main from '../public/locales/en/main.json';
+import about from '../public/locales/en/about.json';
 
 const resources = {
-  common,
-  footer,
-  'second-page': secondpage
+  main,
+  about
 } as const;
 
 export default resources;
