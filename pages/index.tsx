@@ -1,12 +1,8 @@
-import Link from 'next/link'
 import { useRouter } from 'next/router'
 import type { GetStaticProps, InferGetStaticPropsType } from 'next'
 
 import { useTranslation, Trans } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-
-import { Header } from '../components/Header'
-import { Footer } from '../components/Footer'
 
 type Props = {
   // Add custom props here
@@ -27,7 +23,7 @@ const Homepage = (_props: InferGetStaticPropsType<typeof getStaticProps>) => {
     i18n.changeLanguage(newLocale);
   }
 
-  const changeTo = router.locale === 'en' ? 'de' : 'en'
+  const changeTo = router.locale === 'en' ? 'de' : 'pt'
   // const changeTo = i18n.resolvedLanguage === 'en' ? 'de' : 'en'
 
   return (
