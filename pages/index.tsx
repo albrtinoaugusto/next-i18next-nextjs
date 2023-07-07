@@ -10,7 +10,7 @@ type Props = {
 
 const Homepage = (_props: InferGetStaticPropsType<typeof getStaticProps>) => {
   const router = useRouter()
-  const { t, i18n } = useTranslation('main')
+  const { t, i18n } = useTranslation('common')
 
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const onToggleLanguageClick = (newLocale: string) => {
