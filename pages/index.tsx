@@ -48,7 +48,7 @@ const Homepage = (_props: InferGetStaticPropsType<typeof getStaticProps>) => {
 
 // or getServerSideProps: GetServerSideProps<Props> = async ({ locale })
 export const getStaticProps: GetStaticProps<Props> = async ({ locale }) => ({
-  props: {...(await serverSideTranslations(locale ?? 'en', ['main']))} // You add more file names on this array
+  props: {...(await serverSideTranslations(locale ?? 'en', ['common']))} // You add more file names on this array
 })
 
 export default Homepage
